@@ -14,8 +14,7 @@ jobs:
             aa=test
       - run:
           name: bb
-          command: |
-            echo $aa
+          command: echo $aa
 workflows:
   build:
     jobs:
