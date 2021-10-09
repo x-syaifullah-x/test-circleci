@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: aa
-          command: echo JAVA_OPTS
+          command: gradle -v && echo $JAVA_OPTS
 workflows:
   build:
     jobs:
