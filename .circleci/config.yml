@@ -4,13 +4,14 @@ jobs:
     machine:
       image: android:202102-01
     resource_class: large
-    #environment:
-      #JAVA_OPTS: -Xmx4096m
+    environment:
+      JAVA_OPTS: -Xmx4096m
+      JVM_OPTS: -Xmx4097
     steps:
       - checkout
       - run:
           name: aa
-          command: gradle -v && echo $JAVA_OPTS
+          command: ls -la /opt/*
 workflows:
   build:
     jobs:
