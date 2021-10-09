@@ -8,14 +8,14 @@ jobs:
       JVM_OPTS: -Xmx4096m
     steps:
       - checkout
-      -run:
-        name: a
-        command: |
-          aa="test"
-      -run:
-        name: b
-        command: |
-          echo $aa
+      - run:
+          name: aa
+          command: |
+            aa=test
+      - run:
+          name: bb
+          command: |
+            echo $aa
 workflows:
   build:
     jobs:
