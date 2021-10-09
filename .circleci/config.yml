@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: aa
-          command: free -mw
+          command: echo $JVM_OPTS
 workflows:
   build:
     jobs:
