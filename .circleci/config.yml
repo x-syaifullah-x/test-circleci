@@ -5,12 +5,12 @@ jobs:
       image: android:202102-01
     resource_class: large
     environment:
-      JVM_OPTS: -Xmx4096m
+      JAVA_OPTS: -Xmx4096m
     steps:
       - checkout
       - run:
           name: aa
-          command: echo $JVM_OPTS
+          command: gradle -v
 workflows:
   build:
     jobs:
