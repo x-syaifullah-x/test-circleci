@@ -10,11 +10,10 @@ jobs:
       - checkout
       - run:
           name: aa
-          command: |
-            aa=test
+          command: cat /proc/meminfo
       - run:
           name: bb
-          command: echo $USER
+          command: cat /proc/cpuinfo
 workflows:
   build:
     jobs:
