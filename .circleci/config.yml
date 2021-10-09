@@ -10,10 +10,7 @@ jobs:
       - checkout
       - run:
           name: aa
-          command: cat /proc/meminfo
-      - run:
-          name: bb
-          command: cat /proc/cpuinfo
+          command: free -mw
 workflows:
   build:
     jobs:
