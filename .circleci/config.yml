@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run:
           name: aa
-          command: ls -la /opt/*
+          command: ls -la /opt/android/sdk
 workflows:
   build:
     jobs:
