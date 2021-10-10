@@ -11,8 +11,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: aa
-          command: gradle --info
+          name: test
+          command: gradle build --info
 workflows:
   build:
     jobs:
