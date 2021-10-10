@@ -1,1 +1,1 @@
-# test-circleci machine: \n image: android:202102-01
+# test-circleci ( machine: image: android:202102-01 )
