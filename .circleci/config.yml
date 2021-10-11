@@ -1,19 +1,25 @@
+# .circleci/config.yml
 version: 2.1
+
 jobs:
-  build:
+  build-medium:
     machine:
-      image: android:202102-01
-    resource_class: large
-    environment:
-      JVM_OPTS: -Xmx4096m
-      JAVA_OPTS: -Xmx4096m
-      GRADLE_OPTS: -Xmx4096m
+      image: arm-default
+    resource_class: arm.medium
     steps:
-      - checkout
-      - run:
-          name: test
-          command: gradle build --info
+      - run: uname -a
+      - run: echo "Hello, Arm!"
+
+  build-large:
+    machine:
+      image: arm-default
+    resource_class: arm.large
+    steps:
+      - run: uname -a
+      - run: echo "Hello, Arm!"
+
 workflows:
   build:
     jobs:
-      - build
+      - build-medium
+      - build-large
