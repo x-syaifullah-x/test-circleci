@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: uname -a
       - run: echo "Hello, Arm!"
-      - run: sudo apt g++ -y
+      - run: sudo apt install g++ -y
 
   build-large:
     machine:
