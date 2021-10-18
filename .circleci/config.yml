@@ -9,6 +9,7 @@ jobs:
     steps:
       - run: uname -a
       - run: echo "Hello, Arm!"
+      - run: sudo apt update
 
   build-large:
     machine:
