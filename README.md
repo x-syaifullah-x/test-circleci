@@ -1,3 +1,3 @@
 # test-circleci
 
-[![x-syaifullah-x](https://circleci.com/gh/x-syaifullah-x/android-started-project.svg?style=shield)](https://circleci.com/gh/x-syaifullah-x/android-started-project)
+[![x-syaifullah-x](https://circleci.com/gh/x-syaifullah-x/test-circleci.svg?style=shield)](https://circleci.com/gh/x-syaifullah-x/test-circleci)
